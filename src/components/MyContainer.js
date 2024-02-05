@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function MyContainer() {
 
     const { t } = useTranslation();
-    
+
     const [items, setItems] = useState([
         { id: "1", text: "This is an item", clicked: false },
         { id: "2", text: "Also this", clicked: false },
@@ -32,7 +32,7 @@ function MyContainer() {
 
     return (
         <div>
-            {t('This is front page')}
+            <div>{t('This is the front page')}</div>
             <MyList
                 header="This is my list."
                 items={items}
