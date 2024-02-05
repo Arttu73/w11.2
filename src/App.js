@@ -1,5 +1,5 @@
 import './App.css';
-import './i18n';
+//import './i18n';
 import MyContainer from './components/MyContainer';
 import About from './components/About';
 import Header from './components/Header';
