@@ -30,7 +30,7 @@ function MyContainer() {
     return (
         <div>
             <MyList
-                header="Really epic list component"
+                header="This is the front page"
                 items={items}
                 updateItem={updateItem}
             />
