@@ -7,13 +7,12 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import MyHOC from './components/MyHOC';
 
 function App() {
-  const wrappedWithName = MyHOC(Component, { name: "Kalle" });
+  
   return (
     <Router>
     <div className="App">
-      <div className="wrapper">
-        <wrappedWithName/>
-      </div>
+      
+      <MyHOC/>
       <Routes>
         <Route path="/" element={<><Header /> <MyContainer /> </> } />
         <Route path="/about" element={<><Header /> <About /> </> } />
