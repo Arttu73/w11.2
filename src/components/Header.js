@@ -3,9 +3,7 @@ import React, {Suspense} from 'react'
 import { useTranslation } from 'react-i18next';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-
+import Button from '@mui/material/Button';
 
 function Header() {
 
@@ -14,12 +12,16 @@ function Header() {
         i18n.changeLanguage(lang)
     }
 
-
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
-                
-                <Link to="/">{t("Home")}</Link> <Link to="/about">{t("About")}</Link> <button onClick={()=> changeLanguage("fi")}>FI</button> <button onClick={()=> changeLanguage("en")}>EN</button>
+                <Typography variant="h6" style={{ flexGrow: 1 }}>
+                    {t('home page')}
+                </Typography>
+                <Link to="/">{t("Home")}</Link>
+                <Link to="/about">{t("About")}</Link> 
+                <Button color="inherit" onClick={()=> changeLanguage("fi")}>FI</Button> 
+                <Button color="inherit" onClick={()=> changeLanguage("en")}>EN</Button>
                 
             </AppBar>
         </Box>
