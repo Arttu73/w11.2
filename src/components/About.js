@@ -33,7 +33,7 @@ function About() {
         <div>
             <h2>About</h2>
             <ul>
-                {someStuff.map(item => (
+                {items.map(item => (
                     <li key={item.id}>{item.title}</li>
                 ))}
             </ul>
