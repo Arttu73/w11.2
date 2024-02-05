@@ -26,5 +26,12 @@ function Header() {
     )
 }
 
-export default Header;
+//export default Header;
 
+export default function App() {
+    return (
+      <Suspense fallback="loading">
+        <Header />
+      </Suspense>
+    );
+}
