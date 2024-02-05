@@ -13,7 +13,6 @@ function App() {
         <Route path="/" element={<><Header /> <MyContainer /> </> } />
         <Route path="/about" element={<><Header /> <About /> </> } />
       </Routes>
-      <Footer />
     </div>
   </Router>
   );
