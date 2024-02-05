@@ -1,6 +1,6 @@
 import './App.css';
+import './i18n';
 import MyContainer from './components/MyContainer';
-import MyList from './components/MyList';
 import About from './components/About';
 import Header from './components/Header';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
