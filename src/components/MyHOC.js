@@ -1,10 +1,10 @@
 import React from 'react';
 
-const MyHOC = (Component, { name }) => {
+const MyHOC = (WrapperedComponent, { name }) => {
 
     return (
         <div className="wrapper">
-            <Component name={name} />
+            <WrapperedComponent name={name} />
         </div>
      );
     
