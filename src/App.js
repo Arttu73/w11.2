@@ -12,7 +12,6 @@ function App() {
     <Router>
     <div className="App">
       
-      <MyHOC/>
       <Routes>
         <Route path="/" element={<><Header /> <MyContainer /> </> } />
         <Route path="/about" element={<><Header /> <About /> </> } />
