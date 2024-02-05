@@ -17,8 +17,8 @@ function Header() {
             <Toolbar>
                 <Link to="/">{t("Home")}</Link>
                 <Link to="/about">{t("About")}</Link> 
-                <Button id="en" onClick={()=> changeLanguage("en")}>FI</Button> 
-                <Button id="fi" onClick={()=> changeLanguage("fi")}>EN</Button> 
+                <Button id="en" onClick={()=> changeLanguage("en")}>EN</Button> 
+                <Button id="fi" onClick={()=> changeLanguage("fi")}>FI</Button> 
             </Toolbar>
         </AppBar>
     )
