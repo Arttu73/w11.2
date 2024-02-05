@@ -29,8 +29,9 @@ function MyContainer() {
 
     return (
         <div>
+            {t('This is front page')}
             <MyList
-                header="This is the front page"
+                header="This is my list."
                 items={items}
                 updateItem={updateItem}
             />

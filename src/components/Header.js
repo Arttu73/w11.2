@@ -15,10 +15,10 @@ function Header() {
     return (
         <AppBar position="static">
             <Toolbar>
-            <Link to="/">{t("Home")}</Link>
-            <Link to="/about">{t("About")}</Link> 
-            <Button id="en" onClick={()=> changeLanguage("fi")}>FI</Button> 
-            <Button id="fi" onClick={()=> changeLanguage("en")}>EN</Button> 
+                <Link to="/">{t("Home")}</Link>
+                <Link to="/about">{t("About")}</Link> 
+                <Button id="en" onClick={()=> changeLanguage("fi")}>FI</Button> 
+                <Button id="fi" onClick={()=> changeLanguage("en")}>EN</Button> 
             </Toolbar>
         </AppBar>
     )
